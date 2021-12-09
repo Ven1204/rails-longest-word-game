@@ -1,0 +1,16 @@
+<h1>Your result</h1>
+
+<div id="list">
+  <ul class="list">
+    <li>Attempt: <%= @attempt%></li>
+    <li>Translation: <%= @result[:translation]%></li>
+    <li>Time: <%= @result[:time]%></li>
+    <li>Message: <%= @result[:message]%></li>
+    <li>Score: <%= @result[:score]%></li>
+  </ul>
+</div>
+
+
+<div class="link">
+  <%= link_to "Restart", new_path %>
+</div>
